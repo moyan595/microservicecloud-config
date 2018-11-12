@@ -12,9 +12,9 @@ spring:
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
      driver-class-name: com.mysql.jdbc.Driver                # mysql驱动包
-     url: jdbc:mysql://localhost:3306/clouddb03?characterEncoding=utf8&serverTimezone=UTC&useSSL=false   # 数据库名称
+     url: jdbc:mysql://127.0.0.1:3306/clouddb03?characterEncoding=utf8&serverTimezone=UTC&useSSL=false   # 数据库名称
      username: root
-     password: 123456
+     password: root
      dbcp2:
        min-idle: 5                                           # 数据库连接池的最小维持连接数
        initial-size: 5                                       # 初始化连接数
@@ -23,7 +23,7 @@ spring:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.xinyan.springcloud.entities     # 所有Entity别名类所在包
+  type-aliases-package: com.moyan.springcloud.entities     # 所有Entity别名类所在包
   mapper-locations: classpath:mybatis/mapper/*Mapper.xml    # mapper映射文件
 
 eureka:
@@ -35,8 +35,8 @@ eureka:
       prefer-ip-address: true
 
 info:
-  app.name: xinyan-microservicecloud-springcloudconfig01
-  company.name: www.xinyanyuan.com
+  app.name: moyan-microservicecloud-springcloudconfig01
+  company.name: www.moyan.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -49,9 +49,9 @@ spring:
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
      driver-class-name: com.mysql.jdbc.Driver                # mysql驱动包
-     url: jdbc:mysql://localhost:3306/clouddb02?characterEncoding=utf8&serverTimezone=UTC&useSSL=false   # 数据库名称
+     url: jdbc:mysql://127.0.0.1:3306/clouddb02?characterEncoding=utf8&serverTimezone=UTC&useSSL=false   # 数据库名称
      username: root
-     password: 123456
+     password: root
      dbcp2:
        min-idle: 5                                           # 数据库连接池的最小维持连接数
        initial-size: 5                                       # 初始化连接数
